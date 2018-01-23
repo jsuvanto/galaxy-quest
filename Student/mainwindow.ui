@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Galaxy Quest - Kyllä se mun koneella käänty - TIE-02041 - Fall 2017</string>
+  </property>
+  <property name="statusTip">
+   <string/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="button_quit">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>540</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string/>
+    </property>
+    <property name="statusTip">
+     <string>Quit the game.</string>
+    </property>
+    <property name="text">
+     <string>Quit</string>
+    </property>
+   </widget>
+   <widget class="QGraphicsView" name="mapview">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>1</y>
+      <width>671</width>
+      <height>571</height>
+     </rect>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="backgroundBrush">
+     <brush brushstyle="SolidPattern">
+      <color alpha="255">
+       <red>0</red>
+       <green>0</green>
+       <blue>0</blue>
+      </color>
+     </brush>
+    </property>
+    <property name="dragMode">
+     <enum>QGraphicsView::ScrollHandDrag</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_savedships">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>60</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ships robbed: 0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_lostships">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>80</y>
+      <width>111</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Ships lost: 0</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_credits">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>120</y>
+      <width>91</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Credits: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_points">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>100</y>
+      <width>81</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Points: 0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_nextTurn">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>280</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Advance the game by one turn.</string>
+    </property>
+    <property name="text">
+     <string>Next turn</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_turncounter">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>320</y>
+      <width>62</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Turn: 0</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_instructions">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>510</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Show instructions.</string>
+    </property>
+    <property name="text">
+     <string>Instructions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_repair">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>170</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="statusTip">
+     <string>Repair your broken engine.</string>
+    </property>
+    <property name="text">
+     <string>Repair</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="button_highscore">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>480</y>
+      <width>111</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>High Scores</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
